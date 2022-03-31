@@ -1,0 +1,17 @@
+GET http://localhost:3000/orders
+
+GET http://localhost:3000/orders/123
+
+POST http://localhost:3000/orders/123
+Content-Type: application/json
+{
+	"account_id": 1,
+	"value": 100
+}
+
+PATCH http://localhost:3000/orders/123
+Content-Type: application/json
+
+{
+  "value": 100
+}
